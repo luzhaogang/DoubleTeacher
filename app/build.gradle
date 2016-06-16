@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'ipsdrawpanel'
+            keyPassword '123456'
+            storeFile file('IPSkeystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.xes.IPSdrawpanel"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.1"
+        multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(name: 'pen-v4.1.0_light', ext: 'aar')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:23.4.0'
+    //compile 'com.android.support:recyclerview-v7:23.4.0'
+    //compile 'com.android.support:design:23.4.0'
+    //compile 'com.google.guava:guava:18.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    //compile 'de.hdodenhof:circleimageview:2.0.0'
+    //compile project(':xrecyclerview')
+    //compile project(':libraryBadge')
+    compile project(':easechat')
+    //compile 'com.android.support:multidex:1.0.0'
+    //compile project(':okhttputils')
+    //compile 'com.github.bumptech.glide:glide:3.7.0'
+    //compile 'org.greenrobot:eventbus:3.0.0'
+    //compile 'com.google.code.gson:gson:2.5'
+    //compile project(':fab_menu_library')
+}

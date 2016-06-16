@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_bg">#3da7f2</color>
+    <color name="btn_color">#20B2AA</color>
+    <color name="btn_color_bg">#66CDAA</color>
+    <color name="btn_bg_false">#878787</color>
+    <color name="line_color">#dedede</color>
+    <color name="gray">#666666</color>
+    <color name="dark_gray">#f5f5f5</color>
+    <color name="blue">#2988ef</color>
+    <color name="dark_blue">#3da7f2</color>
+    <color name="white">#fafafa</color>
+    <color name="classwhite">#ffffff</color>
+    <color name="main_white_bg">#f7f7f7</color>
+    <color name="circle_bg">#fa7064</color>
+    <color name="record_bg">#fafafa</color>
+    <color name="window_background">#00000000</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="dark_black_text"> #333333</color>
+    <color name="dark_grey_text"> #999999</color>
+    <color name="hont_bg">#bfbfbf</color>
+    <color name="gray_light_1">#b1b1b1</color>
+    <color name="gray_light_2">#f2f2f2</color>
+    <color name="gray_light_3">#c8c8c8</color>
+    <color name="white_light_1">#fcfcfc</color>
+    <color name="white_light_2">#e6e6e6</color>
+    <color name="black_light_2">#444444</color>
+    <color name="gray_drak_1">#888888</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_text"> #666666</color>
+    <color name="text_blue_main">#3da7f2</color>
+    <color name="text_color1">#266999</color>
+    <color name="red"> #f25130</color>
+	<color name="rubber_back">#f5f5f5</color>
+	<color name="paint_backClor">#f0f0f0</color>
+	<color name="report_color">#edeff0</color>
+	   <color name="dsb_progress_color">#ff009688</color>
+    <color name="dsb_track_color">#ff939393</color>
+    <color name="dsb_disabled_color">#66939393</color>
+    <color name="dsb_ripple_color_pressed">#77939393</color>
+    <color name="dsb_ripple_color_focused">#99999999</color>
+</resources>

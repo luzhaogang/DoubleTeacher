@@ -1,0 +1,95 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="inputLayout">
+        <item name="android:background">@drawable/register_btn_bg</item>
+        <item name="android:layout_width">280.0dip</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+
+    <style name="inputBg1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_black_text</item>
+        <item name="android:textColorHint">@color/hont_bg</item>
+        <!-- <item name="android:gravity">center</item> -->
+        <item name="android:background">#00000000</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="progressBarHorizontal_color" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <!-- <item name="max">100</item> -->
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#169584</item>
+        <item name="progress_text_size">14sp</item>
+        <item name="progress_text_color">#169584</item>
+        <item name="progress_reached_bar_height">5dp</item>
+        <item name="progress_unreached_bar_height">3.5dp</item>
+    </style>
+	<style name="question_content">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="DefaultDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 不自动弹出软键盘 -->
+        <item name="android:windowSoftInputMode">stateAlwaysHidden|adjustPan</item>        
+    </style>
+
+    <style name="AnimationSlidein">
+        <item name="android:windowEnterAnimation">@anim/gradients_slidein</item>
+        <item name="android:windowExitAnimation">@anim/gradients_slideout</item>
+    </style>
+     <style name="head">
+        <item name="android:layout_height">@dimen/head_height_45</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">#3d3e40</item>
+    </style>
+
+     <style name="Widget.DiscreteSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorTextAppearance">@style/Widget.DiscreteIndicatorTextAppearance</item>
+        <item name="dsb_progressColor">@color/dsb_progress_color_list</item>
+        <item name="dsb_trackColor">@color/dsb_track_color_list</item>
+        <item name="dsb_rippleColor">@color/dsb_ripple_color_list</item>
+        <item name="dsb_indicatorColor">@color/dsb_progress_color</item>
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
+    </style>
+
+    <style name="Widget.DiscreteIndicatorTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:padding">6dp</item>
+    </style>
+</resources>

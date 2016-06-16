@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xes.IPSdrawpanel">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity
+            android:name="com.xes.IPSdrawpanel.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xes.IPSdrawpanel.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+            android:name="com.xes.IPSdrawpanel.activity.MainActivity1"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+            android:name="com.xes.IPSdrawpanel.activity.LuYinActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name="com.xes.IPSdrawpanel.activity.ContentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <service
+            android:name="com.xes.IPSdrawpanel.service.CommitResultService"
+            android:exported="false">
+        </service>
+        <service
+            android:name="com.xes.IPSdrawpanel.service.CommitBOSResultService"
+            android:exported="false">
+        </service>
+        <service android:name="com.xes.IPSdrawpanel.service.NetService">
+        </service>
+        <!--
+        <service android:name="com.xes.IPSdrawpanel.service.CacheService" >
+        </service>
+        -->
+
+        <receiver android:name="com.xes.IPSdrawpanel.receiver.SendResultMessageReceiver">
+            <intent-filter>
+                <action android:name="com.xes.IPSdrawpanel.activity.ok"/>
+                <action android:name="com.xes.IPSdrawpanel.activity.erro"/>
+                <action android:name="android.net.conn.activity.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.xes.IPSdrawpanel.activity.sendtask"/>
+                <action android:name="com.xes.IPSdrawpanel.activity.download"/>
+                <action android:name="com.xes.IPSdrawpanel.activity.area"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xes.IPSdrawpanel.receiver.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xes.IPSdrawpanel.receiver.DownloadCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.xes.IPSdrawpanel.log.LogService">
+        </service>
+        <service android:name="com.xes.IPSdrawpanel.service.GuideService">
+        </service>
+
+        <!-- 环信 -->
+
+        <activity
+            android:name="com.xes.huanxin.ui.BaiduMapActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/horizontal_slide"/>
+        <activity
+            android:name="com.xes.huanxin.ui.EditActivity"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateVisible">
+        </activity>
+        <activity
+            android:name="com.xes.huanxin.ui.GroupBlacklistActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/horizontal_slide">
+        </activity>
+        <activity
+            android:name="com.xes.huanxin.ui.ShowNormalFileActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/horizontal_slide">
+        </activity>
+        <activity
+            android:name="com.xes.huanxin.ui.ShowVideoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="com.xes.huanxin.ui.ShowBigImage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/horizontal_slide">
+        </activity>
+        <activity
+            android:name="com.xes.huanxin.ui.ExitGroupDialog"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/horizontal_slide">
+        </activity>
+
+        <!-- 设置环信应用的appkey 测试。。 -->
+        <!--<meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="xueersi#xueersiapp" />-->
+
+        <!-- android:value="27283#comxesipsdrawpanel"  "xueersi#xueersiapp"/> -->
+
+
+        <!-- 设置环信应用的appkey 正式版。。 -->
+
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="xueersi#xesapp"/>
+
+
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service
+            android:name="com.easemob.chat.EMChatService"
+            android:process=":remote"/>
+
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3ecea51f560650b1ed8a4b99808f52e8"/>
+        <!-- 环信 -->
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="left_margin">12dp</dimen>
+    <dimen name="rounded_letter_view">20dp</dimen>
+    <dimen name="mBrushSize_red">4dp</dimen>
+    <dimen name="mBrushSize_TRANSPARENT">20dp</dimen>
+    <dimen name="question_text_min_height">32dp</dimen>
+    <dimen name="fontsize_10">10sp</dimen>
+    <dimen name="fontsize_12">12sp</dimen>
+    <dimen name="fontsize_13">13sp</dimen>
+    <dimen name="fontsize_14">14sp</dimen>
+    <dimen name="fontsize_15">15sp</dimen>
+    <dimen name="fontsize_16">16sp</dimen>
+    <dimen name="fontsize_17">17sp</dimen>
+    <dimen name="fontsize_18">18sp</dimen>
+    <dimen name="fontsize_19">19sp</dimen>
+    <dimen name="fontsize_20">20sp</dimen>
+    <dimen name="fontsize_21">21sp</dimen>
+    <dimen name="fontsize_22">22sp</dimen>
+    <dimen name="fontsize_23">23sp</dimen>
+    <dimen name="fontsize_24">24sp</dimen>
+    <dimen name="contact_height">200dp</dimen>
+    <dimen name="contact_width">260dp</dimen>
+    <dimen name="contact_edittext_height">50dp</dimen>
+    <dimen name="contact_edittext_margin">10dp</dimen>
+    <dimen name="contact_item_head_height">30dp</dimen>
+    <dimen name="contact_item_height">45dp</dimen>
+    <dimen name="pie_chart_text1_size">42sp</dimen>
+    <dimen name="pie_chart_text2_size">16dp</dimen>
+    <dimen name="question_bottom_index_height">50dp</dimen>
+    <dimen name="question_bottom_index_margin">20dp</dimen>
+    <dimen name="text_size_20">20.0sp</dimen>
+    <dimen name="text_size_15">15.0sp</dimen>
+    <dimen name="head_height_45">45.0dip</dimen>
+    <dimen name="student_icon_height">80dp</dimen>
+    <dimen name="student_icon_wide">80dp</dimen>
+    <dimen name="fontsize_textView">20sp</dimen>
+
+</resources>

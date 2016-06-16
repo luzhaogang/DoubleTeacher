@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/dissmiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/diss_button" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dissmiss"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.xes.IPSdrawpanel.util.RichText
+                android:id="@+id/question_content"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="12dip"
+                android:gravity="center_vertical"
+                android:minHeight="32dp" >
+            </com.xes.IPSdrawpanel.util.RichText>
+
+            <com.xes.IPSdrawpanel.util.RichText
+                android:id="@+id/question_content1"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:gravity="center_vertical" >
+            </com.xes.IPSdrawpanel.util.RichText>
+
+            <TextView
+                android:id="@+id/option_a"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/option_b"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/option_c"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/option_d"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="" />
+
+            <TextView
+                 android:id="@+id/answer"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="30dp"
+                android:text="答案"
+                android:textColor="#999999"
+                android:textSize="18dp" />
+
+            <com.xes.IPSdrawpanel.util.RichText
+                android:id="@+id/answer_tv"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="12dip"
+                android:gravity="center_vertical"
+                android:minHeight="32dp" >
+            </com.xes.IPSdrawpanel.util.RichText>
+
+            <TextView
+                android:id="@+id/analysis"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="30dp"
+                android:text="解析"
+                android:textColor="#999999"
+                android:textSize="18dp" />
+
+            <com.xes.IPSdrawpanel.util.RichText
+                android:id="@+id/analysis_tv"
+                style="@style/question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="12dip"
+                android:gravity="center_vertical"
+                android:minHeight="32dp"
+                android:textColor="#2988ef" >
+            </com.xes.IPSdrawpanel.util.RichText>
+
+            <LinearLayout
+                android:id="@+id/questionSaylly"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_questionSay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="语音解析："
+                    android:textColor="#999999"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/questionSay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/listen_record_button" />
+
+                <SeekBar
+                    android:id="@+id/questionSay_progress"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:max="100" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:layout_marginTop="5dip" >
+            </View>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

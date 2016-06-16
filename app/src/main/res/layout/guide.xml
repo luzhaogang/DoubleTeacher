@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   
+    <ImageView
+        android:id="@+id/guide_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dip"
+        android:src="@drawable/guide_correcting" />
+
+    <ImageView
+        android:id="@+id/guide_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/guide_online" />
+
+    <ImageView
+        android:id="@+id/guide_selectClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="left"
+        android:src="@drawable/guide_choice_class" />
+
+    <ImageView
+        android:id="@+id/guide_sendActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/guide_send_homework" />
+    <ImageView
+        android:id="@+id/guide_sendFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/guide_send_homework" />
+    
+    
+     <ImageView
+        android:id="@+id/guide_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/guide_class"
+        android:visibility="gone" />
+    <ImageView 
+        android:id="@+id/guide_diss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/skip"/>
+
+</FrameLayout>

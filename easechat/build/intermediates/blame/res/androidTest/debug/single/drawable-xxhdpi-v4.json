@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/close_icon.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/close_icon.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/group.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/group.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/open_icon.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/open_icon.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/chemistrys.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/chemistrys.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/physicss.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/physicss.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/maths.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/maths.png"
+    }
+]

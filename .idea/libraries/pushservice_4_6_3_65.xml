@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pushservice-4.6.3.65">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/easechat/libs/pushservice-4.6.3.65.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

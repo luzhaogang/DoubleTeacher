@@ -1,0 +1,271 @@
+/*
+ * 文件�?:ZipTool.java
+ * 创建时间:2012-2-22 16:21:04
+ * 作�??:Leoly
+ * 版权:Copyright(c) 2012
+ */
+package com.xes.IPSdrawpanel.util;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Enumeration;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
+import java.util.zip.ZipOutputStream;
+
+/**
+ * 此工具类可提供压缩与解压缩功�?
+ * 
+ * @author Leoly
+ * @version v1.0, 2012-2-22
+ */
+public class ZipTool {
+	// 输入解压文件路径为空
+	public static final int NULL_ZIPPATH = 0;
+
+	// 解压文件不存�?
+	public static final int NOTEXIST_ZIPFILE = 1;
+
+	// 输入的解压路径已经存�?
+	public static final int EXIST_UNZIPFILE = 2;
+
+	// 操作成功
+	public static final int ZIPOPTION_SUCCESS = 3;
+
+	// 输入的压缩文件已经存在于该路径中
+	public static final int EXIST_ZIPFILE = 4;
+
+	// 操作失败
+	public static final int ZIPOPTION_FAIL = 5;
+
+	/**
+	 * <pre>
+	 * 解压ZIP文件
+	 * </pre>
+	 * 
+	 * @param zipFilePath
+	 *            String �?要解压的文件路径
+	 * @param unzipPath
+	 *            String �?要解压该文件到哪个路�?
+	 * @param charset
+	 *            文件编码
+	 * @return 解压结果的状�?
+	 */
+	public static int unzip(String zipFilePath, String unzipPath) {
+		if (null == zipFilePath || "".equals(zipFilePath.trim())) {
+			return NULL_ZIPPATH;
+		}
+
+		// �?要解压到的目录已经存在时,返回目录已经存在的状�?.否则创建目录
+		File dirFile = new File(unzipPath);
+		if (dirFile.exists()) {
+			return EXIST_UNZIPFILE;
+		} else {
+			dirFile.mkdirs();
+		}
+
+		// �?要解压的文件不存在时返回解压文件不存在的状�??
+		File file = new File(zipFilePath);
+		if (!file.exists()) {
+			return NOTEXIST_ZIPFILE;
+		}
+
+		ZipFile zipFile = null;
+		try {
+			zipFile = new ZipFile(file);
+		} catch (IOException e) {
+			e.printStackTrace();
+			return ZIPOPTION_FAIL;
+		}
+
+		// 获取压缩包中的所有条�?
+		Enumeration<? extends ZipEntry> entries = zipFile.entries();
+		ZipEntry entry = null;
+		String unzipAbpath = dirFile.getAbsolutePath();
+
+		// 遍历条目,并读取条目流输出到文件流�?(即开始解�?)
+		while (entries.hasMoreElements()) {
+			entry = entries.nextElement();
+			unzipEachFile(zipFile, entry, unzipAbpath);
+		}
+
+		return ZIPOPTION_SUCCESS;
+	}
+
+	/**
+	 * 对某�?条目进行解压
+	 * 
+	 * @param zipFile
+	 *            ZipFile �?要解压的文件
+	 * @param entry
+	 *            ZipEntry 压缩文件中的条目
+	 * @param unzipAbpath
+	 *            String 解压文件的绝对路�?
+	 */
+	private static void unzipEachFile(ZipFile zipFile, ZipEntry entry, String unzipAbpath) {
+		byte[] buffer = new byte[1024 * 5];
+		int readSize = 0;
+		String name = entry.getName();
+		String fileName = name;
+		int index = 0;
+		String tempDir = "";
+
+		// 如果条目为目�?,则在解压文件路径中创建此目录
+		if (entry.isDirectory()) {
+			File tempFile = new File(unzipAbpath + File.separator + name);
+			if (!tempFile.exists()) {
+				tempFile.mkdirs();
+			}
+
+			return;
+		}
+
+		// 不是目录�?,由于压缩文件中目录里的文件名�?:DIR/DIR/xxxFILE,�?以可能文件前的目录并不存在于解压目录�?,也需要创�?
+		if ((index = name.lastIndexOf(File.separator)) != -1) {
+			fileName = name.substring(index, name.length());
+			tempDir = name.substring(0, index);
+			File tempDirFile = new File(unzipAbpath + File.separator + tempDir);
+			if (!tempDirFile.exists()) {
+				tempDirFile.mkdirs();
+			}
+		}
+
+		// 使用输入输出流把条目读出并写到解压目录中
+		String zipPath = unzipAbpath + File.separator + tempDir + fileName;
+		File tempFile = new File(zipPath);
+		InputStream is = null;
+		FileOutputStream fos = null;
+		try {
+			is = zipFile.getInputStream(entry);
+			if (!tempFile.exists()) {
+				tempFile.createNewFile();
+			}
+
+			fos = new FileOutputStream(tempFile);
+			while ((readSize = is.read(buffer)) > 0) {
+				fos.write(buffer, 0, readSize);
+			}
+		} catch (Exception e) {
+			new File(unzipAbpath).delete();
+			e.printStackTrace();
+		} finally {
+			try {
+				is.close();
+				fos.close();
+			} catch (IOException e) {
+				new File(unzipAbpath).delete();
+				e.printStackTrace();
+			}
+		}
+
+	}
+
+	/**
+	 * 压缩文件方法,可以压缩多个文件或�?�目�?
+	 * 
+	 * @param newZipPath
+	 *            String 生成压缩文件的路�?
+	 * @param wantZipPaths
+	 *            String[] �?要压缩的文件条目
+	 */
+	public static int zip(String newZipPath, File[] wantZipFile) {
+		// 生成压缩文件的路径已经存在时,返回文件已经存在的状�?
+		File file = new File(newZipPath);
+		if (file.exists()) {
+			file.delete();
+			// return EXIST_ZIPFILE;
+		}
+
+		// 不存在时,创建用户输入的目录结�?
+		String filePath = file.getAbsolutePath();
+		String basePath = filePath.substring(0, filePath.lastIndexOf(File.separator));
+		File dirFile = new File(basePath);
+		if (!dirFile.exists()) {
+			dirFile.mkdirs();
+		}
+
+		ZipOutputStream zos = null;
+		try {
+			// 生成压缩文件
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+
+			// 打开压缩文件输出�?,准备把待压缩的文件写�?
+			FileOutputStream fos = new FileOutputStream(file);
+			zos = new ZipOutputStream(fos);
+			for (File tempFile : wantZipFile) {
+				if (!tempFile.exists()) {
+					continue;
+				}
+
+				// 进行压缩文件
+				zipEachFile(zos, tempFile, "");
+			}
+		} catch (IOException ie) {
+			file.delete();
+			return ZIPOPTION_FAIL;
+		} finally {
+			try {
+				zos.close();
+			} catch (IOException e) {
+				file.delete();
+				e.printStackTrace();
+				return ZIPOPTION_FAIL;
+			}
+		}
+
+		return ZIPOPTION_SUCCESS;
+	}
+
+	/**
+	 * 压缩某个文件或文件夹 压缩文件方法,可以压缩多个文件或�?�目�?
+	 * 
+	 * @param zos
+	 *            ZipOutputStream 压缩文件的输出流
+	 * @param zipFile
+	 *            File �?要压缩的文件或文件夹
+	 * @param baseDir
+	 *            String 压缩文件夹中的�?�归路径,使用时直接传入空值即�?
+	 */
+	private static void zipEachFile(ZipOutputStream zos, File zipFile, String baseDir) {
+		ZipEntry entry = null;
+
+		// 如果�?要压缩的是一个目�?,由扫描该目录下的文件,并�?�归调用本方法进行压缩处�?
+		if (zipFile.isDirectory()) {
+			// 压缩文件中的递归路径,记录了压缩文件中的文件夹路径
+			baseDir = baseDir + zipFile.getName() + File.separator;
+			File[] tempFiles = zipFile.listFiles();
+			for (File tempFile : tempFiles) {
+				zipEachFile(zos, tempFile, baseDir);
+			}
+		}
+
+		// 不是文件夹时,使用文件输入流和压缩文件输出流把文件写入压缩文件�?
+		else {
+			FileInputStream fis = null;
+			try {
+				entry = new ZipEntry(baseDir + zipFile.getName());
+				zos.putNextEntry(entry);
+				fis = new FileInputStream(zipFile);
+				byte[] buffer = new byte[1024 * 5];
+				int readSize = 0;
+				while ((readSize = fis.read(buffer)) > 0) {
+					zos.write(buffer, 0, readSize);
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					fis.close();
+					zos.closeEntry();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}

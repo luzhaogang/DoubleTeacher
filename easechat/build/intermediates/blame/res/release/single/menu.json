@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/release/menu/remove_from_blacklist.xml",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/src/main/res/menu/remove_from_blacklist.xml"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/release/menu/delete_contact.xml",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/src/main/res/menu/delete_contact.xml"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/release/menu/delete_message.xml",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/src/main/res/menu/delete_message.xml"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/release/menu/context_tab_contact.xml",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/src/main/res/menu/context_tab_contact.xml"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/release/menu/context_contact_list.xml",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/src/main/res/menu/context_contact_list.xml"
+    }
+]

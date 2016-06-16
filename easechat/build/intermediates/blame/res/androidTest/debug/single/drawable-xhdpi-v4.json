@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/group_icon.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/group_icon.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_voice_call_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_voice_call_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_edit_normal.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_edit_normal.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_takepic_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_takepic_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_takepic_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_takepic_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_avatar_group.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_avatar_group.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_item_file.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_item_file.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_image_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_image_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_video_mask_to.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_video_mask_to.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chatting_biaoqing_btn_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chatting_biaoqing_btn_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/btn_style_alert_dialog_background.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/btn_style_alert_dialog_background.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chatting_biaoqing_btn_enable.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chatting_biaoqing_btn_enable.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_send_btn_normal.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_send_btn_normal.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/to_group_details_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/to_group_details_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_video_call_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_video_call_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/icon_mute_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/icon_mute_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_video_call_self.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_video_call_self.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/physicss.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/physicss.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_file_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_file_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/unread_count_bg.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/unread_count_bg.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_press_speak_btn_normal.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_press_speak_btn_normal.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/icon_speaker_on.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/icon_speaker_on.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_location_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_location_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/signin_local_gallry.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/signin_local_gallry.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_face_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_face_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/delete_expression.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/delete_expression.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/app_panel_video_icon.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/app_panel_video_icon.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/icon_mute_on.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/icon_mute_on.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_avatar.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_avatar.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_voice_call_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_voice_call_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_image_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_image_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_file_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_file_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/unread_dot.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/unread_dot.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_voice_call_self.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_voice_call_self.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_video_call_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_video_call_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chemistrys.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chemistrys.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_send_btn_pressed.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_send_btn_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_voice_call_receive.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_voice_call_receive.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_location_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_location_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_video_pressed.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_video_pressed.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_video_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_video_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_face_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_face_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_press_speak_btn_pressed.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_press_speak_btn_pressed.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/maths.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/maths.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/icon_speaker_normal.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/icon_speaker_normal.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/mm_listitem_disable.9.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/mm_listitem_disable.9.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/chat_video_call_receive.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/chat_video_call_receive.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/group.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/group.png"
+    },
+    {
+        "merged": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/lulearn/AndroidStudioProjects/DoubleTeacher/easechat/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/ic_launcher.png"
+    }
+]
